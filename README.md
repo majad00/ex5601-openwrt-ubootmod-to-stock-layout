@@ -40,11 +40,15 @@ chmod +x loader.sh
 
 After the loader finishes, open LuCI and go to:
 System > Matrix Installer
+> Stage 2 will not start if you are not on Openwrt ubootmod layout
+
+
 Upload this file from your computer when asked:
 
 restore_bundle_ex5601.tar.gz
 
-After the bundle is verified, choose the conversion option you want.
+After the bundle is verified, choose the conversion option you want. (See screenshot below)
+
 <img width="1099" height="627" alt="image" src="https://github.com/user-attachments/assets/cef461a1-9aca-4a30-a1db-dd773b203c08" />
 
 ### Building from source
