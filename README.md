@@ -1,4 +1,4 @@
-# UART free Zyxel ex5601 OpenWrt to OEM . and OpenWrt ubootmod to OpenWrt stock Converter
+# UART free Zyxel ex5601 OpenWrt to OEM . and OpenWrt ubootmod to OpenWrt stock Converter ( Project B)
 UART-free conversion between OpenWrt ubootmod, OpenWrt stock layout, and OEM Zyxel firmware for EX5601-T0 /T-56.
  If you have Openwrt ubootmod installed on EX5601-T0 / T-56 router
  With this tool you can 
@@ -9,10 +9,9 @@ UART-free conversion between OpenWrt ubootmod, OpenWrt stock layout, and OEM Zyx
 > Power loss during flash can brick the device.
 > Keep backups of important MTD partitions before flash
 
-##  Install
 ## Installation
 
-Download the three required files:
+Download the three required files from latest release https://github.com/majad00/zyxel-ex5601-openwrt-to-OEM-converter/releases/tag/1.1
 
 - `loader.sh`
 - `openwrt_restore_bundle.tar.gz`
@@ -47,7 +46,7 @@ After the bundle is verified, choose the conversion option you want.
 
 ### Building from source
 
-Project B is part of main project and based on the source from 
+Project A, B and C are part of main project and based on the source from 
 https://github.com/majad00/ex5601_openwrt_loader
 
 
