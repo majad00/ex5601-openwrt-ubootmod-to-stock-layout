@@ -50,13 +50,14 @@ chmod +x loader.sh
 
 After the loader finishes, open LuCI and go to:
 System > Matrix Installer
+
 > Stage 2 will not start if you are not on Openwrt ubootmod layout
 
 **AT THIS POINT JUST WAIT ABOUT TWO MIN, BEFORE PAGE REFRESH AND STAGE 2 STARTS.**
 
-If you wait over two min and nothing happens, click the button to start stage 2 or manual enter url "http://192.168.1.1:18080/?v=1782494397729"
+If you wait over two min and nothing happens, manual enter url "http://192.168.1.1:18080/?v=1782494397729"
 
-Upload this file that you lft on the computer, upload it from your computer when asked:
+Upload this file that you left on the computer, upload it from your computer when asked:
 
 restore_bundle_ex5601.tar.gz
 
