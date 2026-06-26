@@ -19,8 +19,8 @@ Download the three required files from latest release https://github.com/majad00
 ```sh
 cd /tmp
 
-wget https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/loader.sh
-wget https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/openwrt_restore_bundle.tar.gz
+wget -O loader.sh "https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/loader.sh"
+wget -O openwrt_restore_bundle.tar.gz "https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/openwrt_restore_bundle.tar.gz"
 
 ```
 
@@ -37,7 +37,8 @@ scp loader.sh openwrt_restore_bundle.tar.gz root@192.168.1.1:/tmp/
 Download this file and do not copy to router, it will stay at your PC.
 
 ```sh
-wget https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/restore_bundle_ex5601.tar.gz
+wget -O restore_bundle_ex5601.tar.gz "https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/restore_bundle_ex5601.tar.gz"
+
 ```
 
 SSH into the router and run:
