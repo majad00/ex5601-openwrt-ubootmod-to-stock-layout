@@ -1,7 +1,7 @@
-### Convert Openwrt ubootmod layout ( Project B)
+### Convert Openwrt ubootmod ( Project B)
 
-**If you have Openwrt ubootmod installed on EX5601-T0 / T-56 router
- With this tool you can**
+**This tool is for you If you have Openwrt ubootmod installed on EX5601-T0 / T-56 router
+ and you want either**
  1) Convert Openwrt ubootmod to Openwrt stock layout
  2) Convert Openwrt to OEM zyxel firmware
 
@@ -17,18 +17,27 @@ Download the three required files from latest release https://github.com/majad00
 - `openwrt_restore_bundle.tar.gz`
 - `restore_bundle_ex5601.tar.gz`
 ```sh
-  wget https://github.com/majad00/zyxel-ex5601-openwrt-to-OEM-converter/releases/download/1.1/{loader.sh,openwrt_restore_bundle.tar.gz,restore_bundle_ex5601.tar.gz}
+cd /tmp
+
+wget https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/loader.sh
+wget https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/openwrt_restore_bundle.tar.gz
+
 ```
 
-Copy these two files to the router under `/tmp`:
+Make sure these two files are copied to router under `/tmp`:
 
 - `loader.sh`
 - `openwrt_restore_bundle.tar.gz`
 
-Example:
+you can use scp to do it for example:
 
 ```sh
 scp loader.sh openwrt_restore_bundle.tar.gz root@192.168.1.1:/tmp/
+```
+Download this file and do not copy to router, it will stay at your PC.
+
+```sh
+wget https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/restore_bundle_ex5601.tar.gz
 ```
 
 SSH into the router and run:
@@ -43,11 +52,11 @@ System > Matrix Installer
 > Stage 2 will not start if you are not on Openwrt ubootmod layout
 
 
-Upload this file from your computer when asked:
+Upload this file that you lft on the computer, upload it from your computer when asked:
 
 restore_bundle_ex5601.tar.gz
 
-After the bundle is verified, choose the conversion option you want. (See screenshot below)
+Once the second bundle file is uploaded, choose the conversion option you want. (See screenshot below)
 
 <img width="1099" height="627" alt="image" src="https://github.com/user-attachments/assets/cef461a1-9aca-4a30-a1db-dd773b203c08" />
 
