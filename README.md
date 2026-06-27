@@ -16,11 +16,15 @@ Download the three required files from latest release https://github.com/majad00
 - `loader.sh`
 - `openwrt_restore_bundle.tar.gz`
 - `restore_bundle_ex5601.tar.gz`
+- 
 ```sh
-cd /tmp
 
-wget -O loader.sh "https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/loader.sh"
-wget -O openwrt_restore_bundle.tar.gz "https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/openwrt_restore_bundle.tar.gz"
+cd /tmp
+wget --no-check-certificate -O loader.sh "https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/loader.sh"
+wget --no-check-certificate -O openwrt_restore_bundle.tar.gz "https://github.com/majad00/ex5601-openwrt-ubootmod-to-stock-layout/releases/download/1.1/openwrt_restore_bundle.tar.gz"
+chmod +x /tmp/loader.sh
+/tmp/loader.sh
+
 
 ```
 
