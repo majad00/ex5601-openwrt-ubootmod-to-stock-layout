@@ -55,9 +55,8 @@ chmod +x loader.sh
 After the loader finishes, open LuCI and go to:
 System > Matrix Installer
 
-> Stage 2 will not start if you are not on Openwrt ubootmod layout
-
 **AT THIS POINT JUST WAIT ABOUT TWO MIN, BEFORE PAGE REFRESH AND STAGE 2 STARTS.**
+> if you see "page can not be displayed error" in browser keep the browser windows open on that error for about a minute or so
 
 If you wait over two min and nothing happens, manual enter url "http://192.168.1.1:18080/?v=1782494397729"
 
@@ -65,7 +64,8 @@ Upload this file that you left on the computer, upload it from your computer whe
 
 restore_bundle_ex5601.tar.gz
 
-Once the second bundle file is uploaded, choose the conversion option you want. (See screenshot below)
+### Once the second bundle file is uploaded, choose the conversion option you want. (See screenshot below)
+> step 1: Upload bundle and wait it complete to 100%. Skip step 2 and Select conversion in Step 3.
 
 <img width="1099" height="627" alt="image" src="https://github.com/user-attachments/assets/cef461a1-9aca-4a30-a1db-dd773b203c08" />
 
