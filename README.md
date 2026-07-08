@@ -69,9 +69,25 @@ restore_bundle_ex5601.tar.gz
 
 <img width="1099" height="627" alt="image" src="https://github.com/user-attachments/assets/cef461a1-9aca-4a30-a1db-dd773b203c08" />
 
+
+### Troubleshooting Stage 1
+Instead of using the LUCI, you can run stage 1 from SSH. To do this, access the SSH interface and execute the command `loader.sh`. When it starts LUCI, run the following command:  
+```sh  
+STRICT_ENV=0 /tmp/matrix_flash_inactive.sh  
+```  
+For diagnostic testing, if it fails, use:  
+```sh  
+/tmp/matrix_flash_inactive.sh --diagnose  
+```  
+### Troubleshooting Stage 2
+
+Keep the browser windows open, even if you see a 404 error or a message indicating that the page cannot be loaded. If the page still isn't loading after fie minute, use SSH to connect to the router at 192.168.1.1, or access the web interface at 192.168.1.1:18080 (note the port number and Ip is exactly same as port "18080" and ip "192.168.1.1").
+
+
 ### Building from source
 
 Project A, B and C are part of main project and based on the source from 
 https://github.com/majad00/ex5601_openwrt_loader
+
 
 
