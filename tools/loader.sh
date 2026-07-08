@@ -140,15 +140,13 @@ echo "Matrix Loader" > /etc/config/system
 # Start services in background
 /sbin/ubusd &
 sleep 2
-/sbin/configd &
-sleep 2
 /sbin/rpcd &
 sleep 2
 /usr/sbin/uhttpd -f -p 8080 -h /www -r Matrix-OpenWrt &
 /sbin/procd &
 echo "================================================"
-echo "      OpenWrt ubootmod to OEM "
-echo "      OpenWrt ubootmod to OpenWrt stock "
+echo "      OpenWrt ubootmod to OEM V2 "
+echo "      OpenWrt ubootmod to OpenWrt stock V1 "
 echo "================================================"
 echo "------------------------------------------------"
 echo " SUCCESS: Access LUCI at PORT 8080"
