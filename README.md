@@ -64,8 +64,7 @@ Upload this file that you left on the computer, upload it from your computer whe
 
 restore_bundle_ex5601.tar.gz
 
-### Once the second bundle file is uploaded, choose the conversion option you want. (See screenshot below)
-> step 1: Upload bundle and wait it complete to 100%. Skip step 2 and Select conversion in Step 3.
+### Once the second bundle file is uploaded 100%, choose the conversion option you want. (See screenshot below)
 
 <img width="1099" height="627" alt="image" src="https://github.com/user-attachments/assets/cef461a1-9aca-4a30-a1db-dd773b203c08" />
 
@@ -81,7 +80,7 @@ For diagnostic testing, if it fails, use:
 ```  
 ### Troubleshooting Stage 2
 
-Keep the browser windows open, even if you see a 404 error or a message indicating that the page cannot be loaded. If the page still isn't loading after fie minute, use SSH to connect to the router at 192.168.1.1, or access the web interface at 192.168.1.1:18080 (note the port number and Ip is exactly same as port "18080" and ip "192.168.1.1").
+Keep the browser windows open, even if you see a 404 error or a message indicating that the page cannot be loaded. If the page still isn't loading after few minute, use SSH to connect to the router at 192.168.1.1, or access the web interface at 192.168.1.1:18080 (note the port number and Ip is exactly same as port "18080" and ip "192.168.1.1").
 
 
 ### Building from source
