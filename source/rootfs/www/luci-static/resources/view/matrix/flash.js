@@ -33,20 +33,18 @@ return view.extend({
 		var stockButton = E('button', {
 			'class': 'cbi-button cbi-button-apply',
 			'style': 'margin-right:12px'
-		}, [ _('Start Conversion') ]);
+		}, [ _('Start Stage 2') ]);
 
 		var stage2Link = E('a', {
-			'href': STAGE2_URL,
-			'target': '_self',
 			'style': 'font-weight:bold'
-		}, [ _('Stage 2 URL') ]);
+		}, [ _('Stage 2 URL = 192.168.1.1:18080') ]);
 
 		function showStage2Message() {
 			logBox.textContent =
 				'Stage 2 will be starting at 192.168.1.1:18080\n\n' +
 				'The router is rebooting into Matrix ...\n' +
-				'This page will redirect automatically\n\n' +
-				'If it does not open after two minutes, click Stage 2 URL:\n' +
+				'This page will redirect automatically, do not close this web page\n\n' +
+				'If it does not open after two minutes, check 192.168.1.1:18080 in new web window\n' +
 				STAGE2_URL + '\n';
 		}
 
@@ -123,7 +121,7 @@ return view.extend({
 			E('div', { 'class': 'cbi-section' }, [
 				E('h3', {}, [ _('OpenWrt stock or OEM layout conversion') ]),
 				E('p', {}, [
-					_('Conversion will happen in Stage 2')
+					_('Conversion will start in Stage 2')
 				]),
 				E('p', {}, [ stockButton ]),
 				E('p', {}, [ stage2Link ])
