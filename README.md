@@ -2,9 +2,9 @@
 
 **This tool is for you If you have Openwrt ubootmod installed on EX5601-T0 / T-56 router
  and you want either**
- 1) Convert Openwrt ubootmod to Openwrt stock layout
- 2) Convert Openwrt to OEM zyxel firmware
-
+ 1) Convert to Openwrt stock-layout
+ 2) Convert to OEM firmware
+    
 > [!WARNING]
 > Power loss during flash can brick the device.
 > Keep backups of important MTD partitions before flash
