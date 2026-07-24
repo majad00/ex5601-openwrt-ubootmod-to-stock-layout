@@ -54,6 +54,7 @@ chmod +x loader.sh
 
 After the loader finishes, open LuCI and go to:
 System > Matrix Installer
+Start Stage 2
 
 **AT THIS POINT JUST WAIT ABOUT TWO MIN, BEFORE PAGE REFRESH AND STAGE 2 STARTS.**
 > if you see "page can not be displayed error" in browser keep the browser windows open on that error for about a minute or so
